@@ -13,6 +13,8 @@ public class UsuarioService {
     UsuarioRepository uRepository;
 
     public Usuario findByusername(String username, String password) {
-        return uRepository.findByNameAndPassword(username, password);
+        //para comprobar que con la contraseña tmb funciona
+        //return uRepository.findByNameAndPassword(username, password);
+        return uRepository.findByName(username);
     }
 }

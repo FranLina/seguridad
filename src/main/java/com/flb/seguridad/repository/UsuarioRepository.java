@@ -8,4 +8,5 @@ import com.flb.seguridad.models.Usuario;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
     Usuario findByNameAndPassword(String name, String password);
+    Usuario findByName(String name);
 }
